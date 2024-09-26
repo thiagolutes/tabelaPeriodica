@@ -1,0 +1,592 @@
+:root {
+    --metalCorText: #520303;
+    --metalCorTextDark: #eb8e8e;
+    --terrosos: #613605ef;
+    --terrososDark: #ffa602;
+    --alcalinos: #5a550a;
+    --alcalinosDark: #eada00;
+    --outros: #012431;
+    --outrosDark: #a2c7d3;
+    --halogenio: #273f3e;
+    --halogenioDark: #70cceb;
+    --gasNobre: #3d9ee3;
+    --gasNobreDark: #00184fe0;
+    --latan: #90e3e9;
+    --latanDark: #02393d;
+    --actinideos: #dcadd6;
+    --actinideosDark: #6e0460;
+    --semi: #4db6ac;
+    --semiDark: #02443dd0;
+    --nao: #a1d344;
+    --naoDark: #365204;
+}
+
+body{
+    background-color: #ddd2c0;
+    transition: backgroung-color 0.3s linear;
+}
+body.dark{
+    transition: backgroung-color 0.3s linear;
+    background-color: #0e0e0e;
+}
+
+table{
+    margin-top: 40px!important;
+    border-collapse: collapse;
+    border-spacing: 0.2px;
+}
+
+#tabelaGeral{
+    width: 80%;
+    height: 730px;
+    margin-left: 1%;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #ddd2c0;
+    overflow: hidden;
+}
+#tabelaGeral.dark{
+    width: 80%;
+    height: 730px;
+    margin-left: 1%;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #000000;
+    overflow: hidden;
+}
+
+#numero{
+    font-size: 15px;
+    text-align: initial;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+#elemento{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-align: Center;   
+    font-weight: 600;
+    
+}
+
+#nome{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    width: 100px;
+}
+
+td{
+    width: 2%;
+    height: 8%;
+    border-radius: 3.6px;
+    padding: 1px;    
+}
+
+#hidro{
+    background-color: #14d10dbd;
+    transition: background-color 0.3s ease-in-out;
+}
+#hidro:hover{
+    background-color: rgba(26, 73, 4, 0.863);
+    color: wheat;
+}
+#hidro.dark{
+    background-color: #1a4904dc;
+    transition: background-color 0.3s ease-in-out;
+    color: wheat;
+}
+#hidro.dark:hover{
+    background-color: #14d10dbd;
+    color: black;
+}
+
+
+#metaisAlcalino{
+    background-color: #ffa602;
+    transition: background-color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+#metaisAlcalino:hover{
+    background-color: #613605ef;
+    color: wheat
+}
+#metaisAlcalino.dark{
+    background-color: #613605ef;
+    transition: background-color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+    color:wheat
+}
+#metaisAlcalino.dark:hover{
+    background-color: #ffa602;
+    color: black;
+}
+    
+
+#alcalinosTerrosos {
+    background: #eada00;
+    transition: background-color 0.3s ease-in-out;
+}
+#alcalinosTerrosos:hover {
+    background: #5a550a;
+    color: wheat;
+}
+#alcalinosTerrosos.dark {
+    background: #5a550a;
+    transition: background-color 0.3s ease-in-out;
+    color: wheat;
+}
+#alcalinosTerrosos.dark:hover {
+    background: #eada00;
+    color: black;
+}
+
+#metal {
+    background: #eb8e8e;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#metal.dark {
+    background: #520303;
+    transition: background-color 0.3s ease-in-out;
+    color: wheat;
+}
+
+#metal:hover {
+    background: #520303;
+    color: wheat;
+}
+
+#metal.dark:hover {
+    background: #eb8e8e;
+    color: black;
+}
+
+#naoMetal {
+    background: #a1d344;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#naoMetal:hover {
+    background-color: #365204;
+    color: wheat;
+}
+
+#naoMetal.dark {
+    background-color: #365204;
+    transition: background-color 0.3s ease-in-out;
+    color: wheat;
+}
+
+#naoMetal.dark:hover {
+    background: #a1d344;
+    color: black;
+}
+
+#Semimetais {
+    background: #4db6ac;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#Semimetais:hover {
+    background: #02443dd0;
+    color: wheat;
+}
+
+#Semimetais.dark {
+    background: #02443dd0;
+    transition: background-color 0.3s ease-in-out;
+    color: wheat;
+}
+
+#Semimetais.dark:hover {
+    background: #4db6ac;    
+    color: black;
+}
+
+#gasNobre {
+    background: #3d9ee3;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#gasNobre:hover {
+    background: #00184fe0;
+    color: wheat;
+}
+
+#gasNobre.dark {
+    background: #00184fe0;
+    transition: background-color 0.3s ease-in-out;
+    color: wheat;
+}
+
+#gasNobre.dark:hover {
+    background: #3d9ee3;
+    color: black;
+}
+
+#halogenio {
+    background: #70cceb;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#halogenio:hover {
+    background: #273f3e;
+    color: wheat;
+}
+
+#halogenio.dark {
+    background: #273f3e;
+    transition: background-color 0.3s ease-in-out;
+    color: wheat;
+}
+
+#halogenio.dark:hover {
+    background: #70cceb;
+    color: black;
+}
+
+#outros {
+    background: #a2c7d3;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#outros:hover {
+    background: #012431;
+    color: wheat;
+}
+
+#outros.dark {
+    background: #012431;
+    transition: background-color 0.3s ease-in-out;
+    color: wheat;
+}
+
+#outros.dark:hover {
+    background: #a2c7d3;
+    color: black;
+}
+
+#Lantanídeos {
+    background: #90e3e9;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#Lantanídeos:hover {
+    background: #02393d;
+    color: wheat;
+}
+
+#Lantanídeos.dark {
+    background: #02393d;
+    transition: background-color 0.3s ease-in-out;
+    color: wheat;
+}
+
+#Lantanídeos.dark:hover {
+    background: #90e3e9;
+    color: black;
+}
+
+
+
+#Actinídios {
+    background: #dcadd6;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#Actinídios:hover {
+    background: #6e0460;
+    color: wheat;
+}
+
+#Actinídios.dark {
+    background: #6e0460;
+    transition: background-color 0.3s ease-in-out;
+    color: wheat;
+}
+
+#Actinídios.dark:hover {
+    background: #dcadd6;
+    color: black;
+}
+
+
+#espaco{
+    border: none;
+    position: relative;
+}
+
+/* propriedades do tema */
+
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+#label1{
+    background-color: #f5eb91;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    width: 50px;
+    height: 20px;
+    position: relative;
+    top: 2px;
+    left: 2%;
+
+    transform: scale(1.5);
+}
+
+#label1.dark{
+    background-color: #333228;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    width: 50px;
+    height: 20px;
+    position: relative;
+    top: 2px;
+    left: 2%;
+
+    transform: scale(1.5);
+}
+
+.label .bola{
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translatex(1px);
+    transition: transform 0.2s linear;
+}   
+
+.checkbox:checked + .label .bola{
+      transform: translate(32px);
+}
+
+#paragrafoTema{
+    margin-top: 22px;
+    margin-left: 1.3%!important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    color: #0e0e0e;
+    transition: color 0.5s ease-in-out;
+}
+#paragrafoTema.dark{
+    color: wheat;
+    transition: color 0.5s ease-in-out; 
+}
+
+
+
+.fa-moon{
+    color: #a9afb1;
+}
+.fa-sun{
+    color: rgba(189 115 0);
+}
+
+/* mostrar dados */
+
+#dados {
+    border: #0e0e0e00 3px solid;
+    width: 1015px;
+    margin-left: 230px;
+    margin-top: 1px;
+    height: 250px;
+    margin-bottom: -260px;
+    display: none;
+    position: absolute;
+    
+    
+  }
+
+  #nomeE {
+    font-size: 36px;    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 30px;
+    margin-top: 9px;
+    font-weight: 700;
+  }
+
+  #massa, #configuracao, #ano {
+    text-align: end;
+    margin-top: -15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  #descricao {
+    font-size: 14px;
+    font-weight: 500;
+    height: 133px;
+    margin-left: 20px;
+    width: 450px;
+    text-align: justify ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  #configGeral{
+    margin-top: -200px;
+    margin-right: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  #divDados1{
+    text-align: end;
+    margin-right: 20px;
+    /* margin-top: -178px; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  #divDados2{
+    text-align: end;
+    margin-right: 20px;
+    /* margin-top: 24px; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  #divDados3{
+    text-align: end;
+    margin-right: 20px;
+    /* margin-top: 27px; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+
+/* legenda */
+
+#legenda{
+    display: flex;
+    align-items: center;
+    margin-right: 10px; 
+}
+
+#legendacoes{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #302f2d;
+}
+#legendacoes.dark{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: wheat;
+}
+
+#corH{
+    border: #14d10dbd 10px solid;
+    border-radius: 5px;
+    margin-right: 2px;
+}
+#corH.dark{
+    border: #1a4904dc 10px solid;
+}
+#corTer{
+    border: #ffa602 10px solid;
+    border-radius: 5px;
+    margin-right: 2px;
+}
+#corTer.dark{
+    border: #613605ef 10px solid;
+}
+#corAlc{
+    border: #eada00 10px solid;
+    border-radius: 5px;
+    margin-right: 2px;
+}
+#corAlc.dark{
+    border: #5a550a 10px solid;
+}
+#corMetal{
+    border: #eb8e8e 10px solid;
+    border-radius: 5px;
+    margin-right: 2px;
+}
+#corMetal.dark{
+    border: #520303 10px solid;
+}
+#semiLeg{
+    border: #4db6ac 10px solid;
+    border-radius: 5px;
+    margin-right: 2px;
+}
+#semiLeg.dark{
+    border: #02443dd0 10px solid;
+}
+#naoLeg{
+    border: #a1d344 10px solid;
+    border-radius: 5px;
+    margin-right: 2px;
+}
+#naoLeg.dark{
+    border: #365204 10px solid;
+}
+#halogenioLeg{
+    border: #70cceb 10px solid;
+    border-radius: 5px;
+    margin-right: 2px;
+}
+#halogenioLeg.dark{
+    border: #273f3e 10px solid;
+}
+#gasNoLeg{
+    border: #3d9ee3 10px solid;
+    border-radius: 5px;
+    margin-right: 2px;
+}
+#gasNoLeg.dark{
+    border: #00184fe0 10px solid;
+}
+#outrosLeg{
+    border: #a2c7d3 10px solid;
+    border-radius: 5px;
+    margin-right: 2px;
+}
+#outrosLeg.dark{
+    border: #012431 10px solid;
+}
+#lantanideosLeg{
+    border: #90e3e9 10px solid;
+    border-radius: 5px;
+    margin-right: 2px;
+}
+#lantanideosLeg.dark{
+    border: #02393d 10px solid;
+}
+#actinidiosLeg{
+    border: #dcadd6 10px solid;
+    border-radius: 5px;
+    margin-right: 2px;
+}
+#actinidiosLeg.dark{
+    border: #6e0460 10px solid;
+}
+
+
+
+
+#metalJs{
+    background: #000;
+}

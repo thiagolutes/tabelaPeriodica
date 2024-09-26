@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Periodica</title>
+</head>
+<body>
+    
+    <div id="mudarTema">
+        <p id="paragrafoTema"> Mudar tema</p>
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label class="label" for="checkbox" id="label1">
+          <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i> 
+        <div class="bola"></div> 
+        </label>
+    </div>
+
+    <table border id="tabelaGeral">
+
+        <div id="dados">
+            <p id="nomeE"></p>
+            <p id="descricao"></p>
+
+            <DIV id="configGeral"></DIV>
+            <div id="divDados1">
+                <p>Descoberto no ano de:</p>
+                <p id="ano"></p>
+            </div>
+
+            <div id="divDados2">
+                <p>Possue a configuração eletronica de:</p>
+                <p id="configuracao"></p>
+            </div>
+
+            <div id="divDados3">
+                <p>Possue a massa de:</p>
+                <p id="massa"></p>
+            </div>
+            
+            
+        </div> 
+
+        
+        <div id="legenda">
+            <p id="metaisLeg"></p>
+        </div>
+
+        <tr>
+            <td onclick="clicar()" onmouseenter="dados(1)" onmouseleave="tirarDados()" id="hidro">
+                <div id="numero">1</div>
+                <div id="elemento">H</div>
+                <div id="nome">Hidrogenio</div>
+            </td>
+
+            <td style="border-top: none!important;" id="espaco" colspan="16"> </td>
+
+            <td onclick="clicar()" onmouseenter="dados(2)" onmouseleave="tirarDados()" id="gasNobre">
+                <div id="numero">2</div>
+                <div id="elemento">He</div>
+                <div id="nome">Hélio</div>
+            </td>
+        </tr>
+
+        <!-- Linha 1 -->
+
+        <tr>
+            <td onclick="clicar()" onmouseenter="dados(3)" onmouseleave="tirarDados()" id="metaisAlcalino">
+                <div id="numero">3</div>
+                <div id="elemento">Li</div>
+                <div id="nome">Litio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(4)" onmouseleave="tirarDados()" id="alcalinosTerrosos">
+                <div id="numero">4</div>
+                <div id="elemento">Be</div>
+                <div id="nome">Berilio</div>
+            </td>
+
+            <td id="espaco" colspan="10"> </td>
+           
+            <td onclick="clicar()" onmouseenter="dados(5)" onmouseleave="tirarDados()" id="Semimetais">
+                <div id="numero">5</div>
+                <div id="elemento">B</div>
+                <div id="nome">Boro</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(6)" onmouseleave="tirarDados()" id="naoMetal">
+                <div id="numero">6</div>
+                <div id="elemento">C</div>
+                <div id="nome">Carbono</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(7)" onmouseleave="tirarDados()" id="naoMetal">
+                <div id="numero">7</div>
+                <div id="elemento">N</div>
+                <div id="nome">Nitrogenio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(8)" onmouseleave="tirarDados()" id="naoMetal">
+                <div id="numero">8</div>
+                <div id="elemento">O</div>
+                <div id="nome">Oxigenio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(9)" onmouseleave="tirarDados()" id="halogenio">
+                <div id="numero">9</div>
+                <div id="elemento">F</div>
+                <div id="nome">Fluor</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(10)" onmouseleave="tirarDados()" id="gasNobre">
+                <div id="numero">10</div>
+                <div id="elemento">Ne</div>
+                <div id="nome">Neonio</div>
+            </td>
+        </tr>
+
+        <!-- Linha 3 -->
+
+        <tr>
+            <td onclick="clicar()" onmouseenter="dados(11)" onmouseleave="tirarDados()" id="metaisAlcalino">
+                <div id="numero">11</div>
+                <div id="elemento">Na</div>
+                <div id="nome">Sódio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(12)" onmouseleave="tirarDados()" id="alcalinosTerrosos">
+                <div id="numero">12</div>
+                <div id="elemento">Mg</div>
+                <div id="nome">Magnesio</div>
+            </td>
+            
+            <td id="espaco" colspan="10">  </td>
+
+            <td onclick="clicar()" onmouseenter="dados(13)" onmouseleave="tirarDados()" id="outros">
+                <div id="numero">13</div>
+                <div id="elemento">Al</div>
+                <div id="nome">Aluminio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(14)" onmouseleave="tirarDados()" id="Semimetais">
+                <div id="numero">14</div>
+                <div id="elemento">Si</div>
+                <div id="nome">Silicio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(15)" onmouseleave="tirarDados()" id="naoMetal">
+                <div id="numero">15</div>
+                <div id="elemento">P</div>
+                <div id="nome">Fosforo</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(16)" onmouseleave="tirarDados()" id="naoMetal">
+                <div id="numero">16</div>
+                <div id="elemento">S</div>
+                <div id="nome">Enxofre</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(17)" onmouseleave="tirarDados()" id="halogenio">
+                <div id="numero">17</div>
+                <div id="elemento">Cl</div>
+                <div id="nome">Cloro</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(18)" onmouseleave="tirarDados()"  id="gasNobre">
+                <div id="numero">18</div>
+                <div id="elemento">Ar</div>
+                <div id="nome">Argonio</div>
+            </td>
+        </tr>
+
+        <!-- Linha 4 -->
+
+        <tr>
+            <td onclick="clicar()" onmouseenter="dados(19)" onmouseleave="tirarDados()" id="metaisAlcalino">
+                <div id="numero">19</div>
+                <div id="elemento">K</div>
+                <div id="nome">Potassio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(20)" onmouseleave="tirarDados()" id="alcalinosTerrosos">
+                <div id="numero">20</div>
+                <div id="elemento">Ca</div>
+                <div id="nome">Calcio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(21)" onmouseleave="tirarDados()" id="metal">
+                <div id="numero">21</div>
+                <div id="elemento">Sc</div>
+                <div id="nome">Escandio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(22)" onmouseleave="tirarDados()" id="metal">
+                <div id="numero">22</div>
+                <div id="elemento">Ti</div>
+                <div id="nome">Titanio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(23)" onmouseleave="tirarDados()" id="metal">
+                <div id="numero">23</div>
+                <div id="elemento">V</div>
+                <div id="nome">Vanádio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(24)" onmouseleave="tirarDados()" id="metal">
+                <div id="numero">24</div>
+                <div id="elemento">Cr</div>
+                <div id="nome">Cromo</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(25)" onmouseleave="tirarDados()" id="metal">
+                <div id="numero">25</div>
+                <div id="elemento">Mn</div>
+                <div id="nome">Manganes</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(26)" onmouseleave="tirarDados()" id="metal">
+                <div id="numero">26</div>
+                <div id="elemento">Fe</div>
+                <div id="nome">Ferro</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(27)" onmouseleave="tirarDados()" id="metal">
+                <div id="numero">27</div>
+                <div id="elemento">Co</div>
+                <div id="nome">Cobalto</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(28)" onmouseleave="tirarDados()" id="metal">
+                <div id="numero">28</div>
+                <div id="elemento">Ni</div>
+                <div id="nome">Niquel</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(29)" onmouseleave="tirarDados()" id="metal">
+                <div id="numero">29</div>
+                <div id="elemento">Cu</div>
+                <div id="nome">Cobre</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(30)" onmouseleave="tirarDados()" id="metal">
+                <div id="numero">30</div>
+                <div id="elemento">Zn</div>
+                <div id="nome">Zinco</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(31)" onmouseleave="tirarDados()" id="outros">
+                <div id="numero">31</div>
+                <div id="elemento">Ga</div>
+                <div id="nome">Gálio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(32)" onmouseleave="tirarDados()" id="Semimetais">
+                <div id="numero">32</div>
+                <div id="elemento">Ge</div>
+                <div id="nome">Germanio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(33)" onmouseleave="tirarDados()" id="Semimetais">
+                <div id="numero">33</div>
+                <div id="elemento">As</div>
+                <div id="nome">Arsênio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(34)" onmouseleave="tirarDados()" id="naoMetal">
+                <div id="numero">34</div>
+                <div id="elemento">Se</div>
+                <div id="nome">Selenio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(35)" onmouseleave="tirarDados()" id="halogenio">
+                <div id="numero">35</div>
+                <div id="elemento">Br</div>
+                <div id="nome">Bromo</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(36)" onmouseleave="tirarDados()" id="gasNobre">
+                <div id="numero">36</div>
+                <div id="elemento">Kr</div>
+                <div id="nome">Criptonio</div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td onclick="clicar()" onmouseenter="dados(37)" onmouseleave="tirarDados()" id="metaisAlcalino">
+                <div id="numero">37</div>
+                <div id="elemento">Rb</div>
+                <div id="nome">Rubídio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(38)" onmouseleave="tirarDados()" id="alcalinosTerrosos">
+                <div id="numero">38</div>
+                <div id="elemento">Sr</div>
+                <div id="nome">Estroncio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(39)" onmouseleave="tirarDados()" id="metal">
+                <div id="numero">39</div>
+                <div id="elemento">Y</div>
+                <div id="nome">Ítrio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(40)" onmouseleave="tirarDados()" id="metal">
+                <div id="numero">40</div>
+                <div id="elemento">Zr</div>
+                <div id="nome">Zircônio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(41)" onmouseleave="tirarDados()" id="metal">
+                <div id="numero">41</div>
+                <div id="elemento">Nb</div>
+                <div id="nome">Niobio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(42)" onmouseleave="tirarDados()" id="metal">
+                <div id="numero">42</div>
+                <div id="elemento">Mo</div>
+                <div id="nome">Molibdenio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(43)" onmouseleave="tirarDados()" id="metal">
+                <div id="numero">43</div>
+                <div id="elemento">Tc</div>
+                <div id="nome">Tecnécio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(44)" onmouseleave="tirarDados()" id="metal">
+                <div id="numero">44</div>
+                <div id="elemento">Ru</div>
+                <div id="nome">Rutenio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(45)" onmouseleave="tirarDados()" id="metal">
+                <div id="numero">45</div>
+                <div id="elemento">Rh</div>
+                <div id="nome">Ródio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(46)" onmouseleave="tirarDados()" id="metal">
+                <div id="numero">46</div>
+                <div id="elemento">Pd</div>
+                <div id="nome">Paládio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(47)" onmouseleave="tirarDados()" id="metal">
+                <div id="numero">47</div>
+                <div id="elemento">Ag</div>
+                <div id="nome">Prata</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(48)" onmouseleave="tirarDados()" id="metal">
+                <div id="numero">48</div>
+                <div id="elemento">Cd</div>
+                <div id="nome">Cádmio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(49)" onmouseleave="tirarDados()" id="outros">
+                <div id="numero">49</div>
+                <div id="elemento">In</div>
+                <div id="nome">Indio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(50)" onmouseleave="tirarDados()" id="outros">
+                <div id="numero">50</div>
+                <div id="elemento">Sn</div>
+                <div id="nome">Estanho</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(51)" onmouseleave="tirarDados()" id="Semimetais">
+                <div id="numero">51</div>
+                <div id="elemento">Sb</div>
+                <div id="nome">Antimonio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(52)" onmouseleave="tirarDados()" id="Semimetais">
+                <div id="numero">52</div>
+                <div id="elemento">Te</div>
+                <div id="nome">Telurio</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(53)" onmouseleave="tirarDados()" id="halogenio">
+                <div id="numero">53</div>
+                <div id="elemento">I</div>
+                <div id="nome">Iodo</div>
+            </td>
+            <td onclick="clicar()" onmouseenter="dados(54)" onmouseleave="tirarDados()" id="gasNobre">
+                <div id="numero">54</div>
+                <div id="elemento">Xe</div>
+                <div id="nome">Xenônio</div>
+            </td>
+        </tr>
+
+        <!-- Linha 5 -->
+
+        <tr>
+            <td id="metaisAlcalino" onclick="clicar()" onmouseenter="dados(55)" onmouseleave="tirarDados()">
+                <div id="numero">55</div>
+                <div id="elemento">Cs</div>
+                <div id="nome">Césio</div>
+            </td>
+            <td id="alcalinosTerrosos" onclick="clicar()" onmouseenter="dados(56)" onmouseleave="tirarDados()">
+                <div id="numero">56</div>
+                <div id="elemento">Ba</div>
+                <div id="nome">Bário</div>
+            </td>
+        
+            <td id="espaco" colspan="1"> </td>
+        
+            <td id="metal" onclick="clicar()" onmouseenter="dados(72)" onmouseleave="tirarDados()">
+                <div id="numero">72</div>
+                <div id="elemento">Hf</div>
+                <div id="nome">Háfnio</div>
+            </td>
+            <td id="metal" onclick="clicar()" onmouseenter="dados(73)" onmouseleave="tirarDados()">
+                <div id="numero">73</div>
+                <div id="elemento">Ta</div>
+                <div id="nome">Tântalo</div>
+            </td>
+            <td id="metal" onclick="clicar()" onmouseenter="dados(74)" onmouseleave="tirarDados()">
+                <div id="numero">74</div>
+                <div id="elemento">W</div>
+                <div id="nome">Tungstênio</div>
+            </td>
+            <td id="metal" onclick="clicar()" onmouseenter="dados(75)" onmouseleave="tirarDados()">
+                <div id="numero">75</div>
+                <div id="elemento">Re</div>
+                <div id="nome">Rênio</div>
+            </td>
+            <td id="metal" onclick="clicar()" onmouseenter="dados(76)" onmouseleave="tirarDados()">
+                <div id="numero">76</div>
+                <div id="elemento">Os</div>
+                <div id="nome">Ósmio</div>
+            </td>
+            <td id="metal" onclick="clicar()" onmouseenter="dados(77)" onmouseleave="tirarDados()">
+                <div id="numero">77</div>
+                <div id="elemento">Ir</div>
+                <div id="nome">Índio</div>
+            </td>
+            <td id="metal" onclick="clicar()" onmouseenter="dados(78)" onmouseleave="tirarDados()">
+                <div id="numero">78</div>
+                <div id="elemento">Pt</div>
+                <div id="nome">Platina</div>
+            </td>
+            <td id="metal" onclick="clicar()" onmouseenter="dados(79)" onmouseleave="tirarDados()">
+                <div id="numero">79</div>
+                <div id="elemento">Au</div>
+                <div id="nome">Ouro</div>
+            </td>
+            <td id="metal" onclick="clicar()" onmouseenter="dados(80)" onmouseleave="tirarDados()">
+                <div id="numero">80</div>
+                <div id="elemento">Hg</div>
+                <div id="nome">Mercúrio</div>
+            </td>
+            <td id="outros" onclick="clicar()" onmouseenter="dados(81)" onmouseleave="tirarDados()">
+                <div id="numero">81</div>
+                <div id="elemento">Tl</div>
+                <div id="nome">Tálio</div>
+            </td>
+            <td id="outros" onclick="clicar()" onmouseenter="dados(82)" onmouseleave="tirarDados()">
+                <div id="numero">82</div>
+                <div id="elemento">Pb</div>
+                <div id="nome">Chumbo</div>
+            </td>
+            <td id="outros" onclick="clicar()" onmouseenter="dados(83)" onmouseleave="tirarDados()">
+                <div id="numero">83</div>
+                <div id="elemento">Bi</div>
+                <div id="nome">Bismuto</div>
+            </td>
+            <td id="Semimetais" onclick="clicar()" onmouseenter="dados(84)" onmouseleave="tirarDados()">
+                <div id="numero">84</div>
+                <div id="elemento">Po</div>
+                <div id="nome">Polônio</div>
+            </td>
+            <td id="halogenio" onclick="clicar()" onmouseenter="dados(85)" onmouseleave="tirarDados()">
+                <div id="numero">85</div>
+                <div id="elemento">At</div>
+                <div id="nome">Ástato</div>
+            </td>
+            <td id="gasNobre" onclick="clicar()" onmouseenter="dados(86)" onmouseleave="tirarDados()">
+                <div id="numero">86</div>
+                <div id="elemento">Rn</div>
+                <div id="nome">Radônio</div>
+            </td>
+        </tr>
+        
+
+        <!-- Linha 6 -->
+
+        <tr>
+            <td id="metaisAlcalino" onclick="clicar()" onmouseenter="dados(87)" onmouseleave="tirarDados()">
+                <div id="numero">87</div>
+                <div id="elemento">Fr</div>
+                <div id="nome">Frâncio</div>
+            </td>
+            <td id="alcalinosTerrosos" onclick="clicar()" onmouseenter="dados(88)" onmouseleave="tirarDados()">
+                <div id="numero">88</div>
+                <div id="elemento">Ra</div>
+                <div id="nome">Rádio</div>
+            </td>
+        
+            <td id="espaco" colspan="1"> </td>
+        
+            <td id="metal" onclick="clicar()" onmouseenter="dados(104)" onmouseleave="tirarDados()">
+                <div id="numero">104</div>
+                <div id="elemento">Rf</div>
+                <div id="nome">Rutherfordio</div>
+            </td>
+            <td id="metal" onclick="clicar()" onmouseenter="dados(105)" onmouseleave="tirarDados()">
+                <div id="numero">105</div>
+                <div id="elemento">Db</div>
+                <div id="nome">Dubnio</div>
+            </td>
+            <td id="metal" onclick="clicar()" onmouseenter="dados(106)" onmouseleave="tirarDados()">
+                <div id="numero">106</div>
+                <div id="elemento">Sg</div>
+                <div id="nome">Seabórgio</div>
+            </td>
+            <td id="metal" onclick="clicar()" onmouseenter="dados(107)" onmouseleave="tirarDados()">
+                <div id="numero">107</div>
+                <div id="elemento">Bh</div>
+                <div id="nome">Bohrio</div>
+            </td>
+            <td id="metal" onclick="clicar()" onmouseenter="dados(108)" onmouseleave="tirarDados()">
+                <div id="numero">108</div>
+                <div id="elemento">Hs</div>
+                <div id="nome">Hássio</div>
+            </td>
+            <td id="metal" onclick="clicar()" onmouseenter="dados(109)" onmouseleave="tirarDados()">
+                <div id="numero">109</div>
+                <div id="elemento">Mt</div>
+                <div id="nome">Meitnério</div>
+            </td>
+            <td id="metal" onclick="clicar()" onmouseenter="dados(110)" onmouseleave="tirarDados()">
+                <div id="numero">110</div>
+                <div id="elemento">Ds</div>
+                <div id="nome">Darmstádio</div>
+            </td>
+            <td id="metal" onclick="clicar()" onmouseenter="dados(111)" onmouseleave="tirarDados()">
+                <div id="numero">111</div>
+                <div id="elemento">Rg</div>
+                <div id="nome">Roentgênio</div>
+            </td>
+            <td id="metal" onclick="clicar()" onmouseenter="dados(112)" onmouseleave="tirarDados()">
+                <div id="numero">112</div>
+                <div id="elemento">Cn</div>
+                <div id="nome">Copernício</div>
+            </td>
+            <td id="outros" onclick="clicar()" onmouseenter="dados(113)" onmouseleave="tirarDados()">
+                <div id="numero">113</div>
+                <div id="elemento">Nh</div>
+                <div id="nome">Nihônio</div>
+            </td>
+            <td id="outros" onclick="clicar()" onmouseenter="dados(114)" onmouseleave="tirarDados()">
+                <div id="numero">114</div>
+                <div id="elemento">Fl</div>
+                <div id="nome">Fleróvio</div>
+            </td>
+            <td id="outros" onclick="clicar()" onmouseenter="dados(115)" onmouseleave="tirarDados()">
+                <div id="numero">115</div>
+                <div id="elemento">Mc</div>
+                <div id="nome">Moscóvio</div>
+            </td>
+            <td id="outros" onclick="clicar()" onmouseenter="dados(116)" onmouseleave="tirarDados()">
+                <div id="numero">116</div>
+                <div id="elemento">Lv</div>
+                <div id="nome">Livermório</div>
+            </td>
+            <td id="halogenio" onclick="clicar()" onmouseenter="dados(117)" onmouseleave="tirarDados()">
+                <div id="numero">117</div>
+                <div id="elemento">Ts</div>
+                <div id="nome">Tenessino</div>
+            </td>
+            <td id="gasNobre" onclick="clicar()" onmouseenter="dados(118)" onmouseleave="tirarDados()">
+                <div id="numero">118</div>
+                <div id="elemento">Og</div>
+                <div id="nome">Oganessônio</div>
+            </td>
+        </tr>
+        
+
+        <!-- Linha 7   -->
+
+        <tr>
+            <td colspan="18" id="espaco"> 
+                <div style="display: flex;">
+
+                    <div style="margin-top: 3px!important;" id="legenda">
+                        <p onmouseenter="legenda(1)" onmouseleave="legenda2(1)" id="corH"></p>
+                        <p id="legendacoes">Hidrogenio</p>
+                    </div>
+                    <div style="margin-top: 3px!important;" id="legenda">
+                        <p onmouseenter="legenda(2)" onmouseleave="legenda2(2)" id="corTer"></p>
+                        <p style="width: 61.61px;" id="legendacoes">Metais-terrossos</p>
+                    </div>
+                    <div style="margin-top: 3px!important;" id="legenda">
+                        <p onmouseenter="legenda(3)" onmouseleave="legenda2(3)" id="corAlc"></p>
+                        <p id="legendacoes">Alcalinos-terrosos</p>
+                    </div>
+                </div>
+                
+            </td>
+           
+        </tr>
+
+        <!-- Linha 8   -->
+
+        <tr>
+            <td colspan="3" id="espaco"> 
+                <div style="display: flex;">
+
+                    <div style="margin-top: 3px!important;" id="legenda">
+                        <p onmouseenter="legenda(4)" onmouseleave="legenda2(4)" id="corMetal"></p>
+                        <p style="width: 61.61px;" id="legendacoes">Metal</p>
+                    </div>
+                    <div style="margin-top: 3px!important;" id="legenda">
+                        <p onmouseenter="legenda(5)" onmouseleave="legenda2(5)" id="semiLeg"></p>
+                        <p style="width: 61.61px;" id="legendacoes">Semi-Metais</p>
+                    </div>
+                    <div style="margin-top: 3px!important;" id="legenda">
+                        <p onmouseenter="legenda(6)" onmouseleave="legenda2(6)" id="naoLeg"></p>
+                        <p id="legendacoes">Não-metais</p>
+                    </div>
+                    
+                </div>
+                
+
+            </td>
+            
+            <td id="Lantanídeos" onclick="clicar()" onmouseenter="dados(57)" onmouseleave="tirarDados()">
+                <div id="numero">57</div>
+                <div id="elemento">La</div>
+                <div id="nome">Lantânio</div>
+            </td>
+            <td id="Lantanídeos" onclick="clicar()" onmouseenter="dados(58)" onmouseleave="tirarDados()">
+                <div id="numero">58</div>
+                <div id="elemento">Ce</div>
+                <div id="nome">Cério</div>
+            </td>
+            <td id="Lantanídeos" onclick="clicar()" onmouseenter="dados(59)" onmouseleave="tirarDados()">
+                <div id="numero">59</div>
+                <div id="elemento">Pr</div>
+                <div id="nome">Praseodímio</div>
+            </td>
+            <td id="Lantanídeos" onclick="clicar()" onmouseenter="dados(60)" onmouseleave="tirarDados()">
+                <div id="numero">60</div>
+                <div id="elemento">Nd</div>
+                <div id="nome">Neodímio</div>
+            </td>
+            <td id="Lantanídeos" onclick="clicar()" onmouseenter="dados(61)" onmouseleave="tirarDados()">
+                <div id="numero">61</div>
+                <div id="elemento">Pm</div>
+                <div id="nome">Promécio</div>
+            </td>
+            <td id="Lantanídeos" onclick="clicar()" onmouseenter="dados(62)" onmouseleave="tirarDados()">
+                <div id="numero">62</div>
+                <div id="elemento">Sm</div>
+                <div id="nome">Samário</div>
+            </td>
+            <td id="Lantanídeos" onclick="clicar()" onmouseenter="dados(63)" onmouseleave="tirarDados()">
+                <div id="numero">63</div>
+                <div id="elemento">Eu</div>
+                <div id="nome">Európio</div>
+            </td>
+            <td id="Lantanídeos" onclick="clicar()" onmouseenter="dados(64)" onmouseleave="tirarDados()">
+                <div id="numero">64</div>
+                <div id="elemento">Gd</div>
+                <div id="nome">Gadolínio</div>
+            </td>
+            <td id="Lantanídeos" onclick="clicar()" onmouseenter="dados(65)" onmouseleave="tirarDados()">
+                <div id="numero">65</div>
+                <div id="elemento">Tb</div>
+                <div id="nome">Térbio</div>
+            </td>
+            <td id="Lantanídeos" onclick="clicar()" onmouseenter="dados(66)" onmouseleave="tirarDados()">
+                <div id="numero">66</div>
+                <div id="elemento">Dy</div>
+                <div id="nome">Disprósio</div>
+            </td>
+            <td id="Lantanídeos" onclick="clicar()" onmouseenter="dados(67)" onmouseleave="tirarDados()">
+                <div id="numero">67</div>
+                <div id="elemento">Ho</div>
+                <div id="nome">Holmio</div>
+            </td>
+            <td id="Lantanídeos" onclick="clicar()" onmouseenter="dados(68)" onmouseleave="tirarDados()">
+                <div id="numero">68</div>
+                <div id="elemento">Er</div>
+                <div id="nome">Érbio</div>
+            </td>
+            <td id="Lantanídeos" onclick="clicar()" onmouseenter="dados(69)" onmouseleave="tirarDados()">
+                <div id="numero">69</div>
+                <div id="elemento">Tm</div>
+                <div id="nome">Túlio</div>
+            </td>
+            <td id="Lantanídeos" onclick="clicar()" onmouseenter="dados(70)" onmouseleave="tirarDados()">
+                <div id="numero">70</div>
+                <div id="elemento">Yb</div>
+                <div id="nome">Itérbio</div>
+            </td>
+            <td id="Lantanídeos" onclick="clicar()" onmouseenter="dados(71)" onmouseleave="tirarDados()">
+                <div id="numero">71</div>
+                <div id="elemento">Lu</div>
+                <div id="nome">Lutécio</div>
+            </td>
+            
+        </tr>
+        <tr>
+
+            <td colspan="3" id="espaco">
+                <div style="display: flex;">
+                    <div style="margin-top: 3px!important;" id="legenda">
+                        <p onmouseenter="legenda(7)" onmouseleave="legenda2(7)" id="halogenioLeg"></p>
+                        <p style="width: 61.61px;" id="legendacoes">Halogenio</p>
+                    </div>
+                    <div style="margin-top: 3px!important;" id="legenda">
+                        <p onmouseenter="legenda(8)" onmouseleave="legenda2(8)" id="gasNoLeg"></p>
+                        <p style="width: 61.61px;" id="legendacoes">Gases nobres</p>
+                    </div>
+                    <div style="margin-top: 3px!important;" id="legenda">
+                        <p onmouseenter="legenda(9)" onmouseleave="legenda2(9)" id="outrosLeg"></p>
+                        <p id="legendacoes">Outros metais</p>
+                    </div>
+                </div>
+             </td>
+
+             <td id="Actinídios" onclick="clicar()" onmouseenter="dados(89)" onmouseleave="tirarDados()">
+                <div id="numero">89</div>
+                <div id="elemento">Ac</div>
+                <div id="nome">Actínio</div>
+            </td>
+            <td id="Actinídios" onclick="clicar()" onmouseenter="dados(90)" onmouseleave="tirarDados()">
+                <div id="numero">90</div>
+                <div id="elemento">Th</div>
+                <div id="nome">Tório</div>
+            </td>
+            <td id="Actinídios" onclick="clicar()" onmouseenter="dados(91)" onmouseleave="tirarDados()">
+                <div id="numero">91</div>
+                <div id="elemento">Pa</div>
+                <div id="nome">Protactinio</div>
+            </td>
+            <td id="Actinídios" onclick="clicar()" onmouseenter="dados(92)" onmouseleave="tirarDados()">
+                <div id="numero">92</div>
+                <div id="elemento">U</div>
+                <div id="nome">Urânio</div>
+            </td>
+            <td id="Actinídios" onclick="clicar()" onmouseenter="dados(93)" onmouseleave="tirarDados()">
+                <div id="numero">93</div>
+                <div id="elemento">Np</div>
+                <div id="nome">Netúnio</div>
+            </td>
+            <td id="Actinídios" onclick="clicar()" onmouseenter="dados(94)" onmouseleave="tirarDados()">
+                <div id="numero">94</div>
+                <div id="elemento">Pu</div>
+                <div id="nome">Plutônio</div>
+            </td>
+            <td id="Actinídios" onclick="clicar()" onmouseenter="dados(95)" onmouseleave="tirarDados()">
+                <div id="numero">95</div>
+                <div id="elemento">Am</div>
+                <div id="nome">Amerício</div>
+            </td>
+            <td id="Actinídios" onclick="clicar()" onmouseenter="dados(96)" onmouseleave="tirarDados()">
+                <div id="numero">96</div>
+                <div id="elemento">Cm</div>
+                <div id="nome">Cúrio</div>
+            </td>
+            <td id="Actinídios" onclick="clicar()" onmouseenter="dados(97)" onmouseleave="tirarDados()">
+                <div id="numero">97</div>
+                <div id="elemento">Bk</div>
+                <div id="nome">Berquélio</div>
+            </td>
+            <td id="Actinídios" onclick="clicar()" onmouseenter="dados(98)" onmouseleave="tirarDados()">
+                <div id="numero">98</div>
+                <div id="elemento">Cf</div>
+                <div id="nome">Californio</div>
+            </td>
+            <td id="Actinídios" onclick="clicar()" onmouseenter="dados(99)" onmouseleave="tirarDados()">
+                <div id="numero">99</div>
+                <div id="elemento">Es</div>
+                <div id="nome">Einsténio</div>
+            </td>
+            <td id="Actinídios" onclick="clicar()" onmouseenter="dados(100)" onmouseleave="tirarDados()">
+                <div id="numero">100</div>
+                <div id="elemento">Fm</div>
+                <div id="nome">Férmio</div>
+            </td>
+            <td id="Actinídios" onclick="clicar()" onmouseenter="dados(101)" onmouseleave="tirarDados()">
+                <div id="numero">101</div>
+                <div id="elemento">Md</div>
+                <div id="nome">Mendelévio</div>
+            </td>
+            <td id="Actinídios" onclick="clicar()" onmouseenter="dados(102)" onmouseleave="tirarDados()">
+                <div id="numero">102</div>
+                <div id="elemento">No</div>
+                <div id="nome">Nobélio</div>
+            </td>
+            <td id="Actinídios" onclick="clicar()" onmouseenter="dados(103)" onmouseleave="tirarDados()">
+                <div id="numero">103</div>
+                <div id="elemento">Lr</div>
+                <div id="nome">Laurêncio</div>
+            </td>
+            
+        </tr>
+        <tr>
+            <td colspan="3" id="espaco">
+                <div style="display: flex;">
+                    <div style="margin-top: 3px!important;" id="legenda">
+                        <p onmouseenter="legenda(10)" onmouseleave="legenda2(10)" id="lantanideosLeg"></p>
+                        <p id="legendacoes">Lantanídeos</p>
+                    </div>
+                    <div style="margin-top: 3px!important;" id="legenda">
+                        <p onmouseenter="legenda(11)" onmouseleave="legenda(11)" id="actinidiosLeg"></p>
+                        <p id="legendacoes">Actinídios</p>
+                    </div>
+                </div>
+             </td>
+        </tr>
+        
+    </table>
+
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+</body>
+</html>
